@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html>
+<head>
+</head>
+<body background="C:\cts\ss.jpeg">
+<video width="320" height="240" controls>
+  <source src="C:\cts\vvv.mp4" type="video/mp4">
+
+</video>
+<canvas id="mycanvas" width="1000"height="100" style="border:2px solid #000000;"></canvas>
+ 
+<form>
+<h1>EMPLOYEE DETAILS</h1>
+<table>
+EMPLOYEE NAME:    <input type="text"><br>
+
+EMPLOYEE ID:      <input type="text"><br>
+
+EMPLOYEE LOCATION:<input type="text"><br>
+
+EMPLOYEE ADDRESS: <textarea></textarea><br>
+
+EMPLOYEE CONTACT: <input type="text"><br>
+</table>
+<button type="button">submit</button><br>
+
+</form>
+
+ <button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</body>
+</html
+

@@ -1,0 +1,20 @@
+public class Employee
+{
+int empId;
+int empSalary;
+String name;
+void setemploye(eid,esal,ename)
+{
+empId=eid;
+empSalary=esal;
+ename=name;
+}
+void getemployee()
+{
+System.out.println(""+empId+ ""+empSalary+ ""+name+);
+}
+Employee()
+{
+System.out.println("swap");
+}
+}
