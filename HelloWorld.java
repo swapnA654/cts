@@ -1,12 +1,12 @@
-package com;
-
+package com.cts.project;
 public class HelloWorld {
-	   private String message;
+	private String name;
 
-	   public void setMessage(String message){
-	      this.message  = message;
-	   }
-	   public void getMessage(){
-	      System.out.println("Your Message : " + message);
-	   }
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public void printHello() {
+		System.out.println("Spring 3 : Hello ! " + name);
+	}
+}
