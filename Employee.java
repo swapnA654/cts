@@ -1,11 +1,13 @@
-class Employee
-{
-public static void main(String args[])
-{
-EmployeeMain e=new EmployeeMain();
-e.setemployee(1,1000,"swap");
-e.getemployee();
-Employee p= new Employee();
+package com;
 
-}
+public class Employee {
+	private String message;
+
+	   public void setMessage(String message){
+	      this.message  = message;
+	   }
+	   public void getMessage(){
+	      System.out.println("Your Message : " + message);
+	   }
+
 }
