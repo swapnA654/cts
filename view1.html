@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <title>Appointments Page</title>
+
+ <meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<h1 align="center">Appointments Page</h1> <br>
+
+<br>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="app.html">PlaceAppointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="view.html">ViewAppointment</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>      
+    </ul>
+  </div>  
+</nav>
+<style>
+
+table, th, td {
+
+ border: 1px solid black;
+
+ border-collapse: collapse;
+
+
+
+}
+
+th, td {
+
+ padding: 15px;
+
+ text-align: left;
+
+}
+
+table#t01 {
+
+ width: 100%;
+
+ background-color: #f1f1c1;
+
+}
+
+body{
+
+background-image:url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+
+background-repeat:no-repeat;
+
+background-size:cover;
+
+}
+
+
+
+</style>
+<div class="container ml-auto">
+
+<div class="row">
+
+
+
+
+
+
+
+<div class="col-lg-9 col-md-9 col-sm-10">
+
+
+
+  <h2 class="text-align-center">View Appointments Page</h2>
+
+
+
+
+
+
+
+  <div class="table-responsive mt-5">
+
+
+
+   <table id="tbldisplay" class="table ">
+
+
+
+
+
+
+
+   </table>
+
+
+
+  </div>
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+ </div>
+
+
+
+</div>
+
+  <body>
+
+ 
+<script type="text/javascript">
+
+var i=0;
+
+var res = JSON.parse(sessionStorage.getItem('storeObject'));
+
+var size = res.length;
+
+alert(size);
+
+document.getElementById('tbldisplay').innerHTML = "<thead><tr> <th>S.no</th> <th>Firstname </th><th>Lastname</th> <th>age</th><th>email</th><th>phone</th><th>streetAddress</th> <th>City </th> <th>country</th> </tr></thead>";
+
+document.getElementById('tbldisplay').innerHTML += "<tbody>";
+
+for(i=0;i<size;i++){
+
+var j = i+1;
+
+document.getElementById('tbldisplay').innerHTML += "<tr><td>" + j +" </td><td>" +res[i].firstname + "</td><td>" +res[i].lastname + "</td><td>" +res[i].age + "</td><td>" +res[i].email + "</td><td>" +res[i].phone + "</td><td>" +res[i].streetAddress + "</td><td>" +res[i].City+ "</td><td>" +res[i].country + "</td></tr>";
+
+}
+
+document.getElementById('tbldisplay').innerHTML += "</tbody>";
+
+
+
+</script>
+
+
+
+ 
+
+</table>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
