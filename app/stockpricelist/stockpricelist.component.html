@@ -1,0 +1,21 @@
+<table  class="table table-hover table-sm" >
+    <thead class="thead-light">  
+        <tr>  
+            <th>COMPANYCODE</th> 
+            <th>STOCKEXCHANGE</th>  
+            <th>CURRENTPRICE</th>  
+            
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr *ngFor="let stockprice of stockpriceList">  
+           <td>{{stockprice.companyCode}}</td>  
+           <td>{{stockprice.stockExchange}}</td>  
+           <td>{{stockprice.currentPrice}}</td>  
+           
+           </tr>
+           </tbody>
+</table>
+
+
+

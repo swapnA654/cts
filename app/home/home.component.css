@@ -1,0 +1,11 @@
+h1{
+    text-align:center;
+}
+
+body{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsUrlYCAAPECjNXvmAKhnlu9rnAx_AekRAQO59roEQzPR2zT-i');
+background-repeat:no-repeat;
+background-size: cover;
+height:700px;
+width:1400px;
+}
